@@ -1,0 +1,21 @@
+{
+  "name": "codeacademy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://plextract.visualstudio.com/DefaultCollection/CodeAcademy/"
+  },
+  "author": "",
+  "license": "ISC"
+}
