@@ -24,7 +24,7 @@
     //-------- Git configuration --------
 
     // Is git enabled
-    "git.enabled": true,
+    "git.enabled": false,
 
     // Path to the git executable
     "git.path": "https://plextract.visualstudio.com/DefaultCollection/CodeAcademy",
@@ -90,5 +90,7 @@
     "projectManager.openInNewWindow": true,
 
     // Should use the alternative approach in Mac OS X?
-    "projectManager.useAlternativeMacOSXPath": false
+    "projectManager.useAlternativeMacOSXPath": false,
+
+    "vsts.teamProject": "CodeAcademy"
 }
