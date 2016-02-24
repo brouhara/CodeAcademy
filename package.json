@@ -6,7 +6,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-      
+
   },
   "devDependencies": {
     "grunt": "^0.4.5"
@@ -16,6 +16,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://plextract.visualstudio.com/DefaultCollection/CodeAcademy/"
+    "url": "plextract.visualstudio.com\\DefaultCollection\\CodeAcademy\\"
   }
 }
