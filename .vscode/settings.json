@@ -77,7 +77,6 @@
     // The jshint options object to provide args to the jshint command.
     "jshint.options": {},
 
-
     //-------- Project Manager Configuration --------
 
     // List the projects sorted by...
@@ -92,5 +91,7 @@
     // Should use the alternative approach in Mac OS X?
     "projectManager.useAlternativeMacOSXPath": false,
 
+    // Team Project Folder
     "vsts.teamProject": "CodeAcademy"
+
 }

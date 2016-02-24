@@ -14,7 +14,8 @@
   },
   "repository": {
     "type": "vsts",
-    "url": "https://plextract.visualstudio.com/DefaultCollection"
+    "url": "https://plextract.visualstudio.com/"
+    
   },
   "author": "",
   "license": "ISC"
