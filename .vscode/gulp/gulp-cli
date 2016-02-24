@@ -1,4 +1,10 @@
 npm install --global gulp-cli
+npm install --global gulp
+
+
+npm install --global jshint
+npm install --global gulp-jshint
+
 npm install --save-dev gulp
 
 

@@ -1,0 +1,94 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    //-------- Files configuration --------
+
+    // Configure glob patterns for excluding files and folders.
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/.git": true,
+        "**/.DS_Store": true
+    },
+
+    // The default character set encoding to use when reading and writing files.
+    "files.encoding": "utf8",
+
+    // When enabled, will trim trailing whitespace when you save a file.
+    "files.trimTrailingWhitespace": true,
+
+    // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange". If set to "afterDelay" you can configure the delay in "files.autoSaveDelay".
+    "files.autoSave": "afterDelay",
+
+    // Controls the delay in ms after which a dirty file is saved automatically. Only applies when "files.autoSave" is set to "afterDelay"
+    "files.autoSaveDelay": 1000,
+
+    //-------- Git configuration --------
+
+    // Is git enabled
+    "git.enabled": true,
+
+    // Path to the git executable
+    "git.path": "https://plextract.visualstudio.com/DefaultCollection/CodeAcademy",
+
+    // Whether auto fetching is enabled.
+    "git.autofetch": true,
+
+
+    //-------- JavaScript configuration --------
+
+    // Always include all words from the current document.
+    "javascript.suggest.alwaysAllWords": true,
+
+    // Complete functions with their parameter signature.
+    "javascript.suggest.useCodeSnippetsOnMethodSuggest": true,
+
+    // Controls how JavaScript validation works.
+
+    // Controls VSCode's JavaScript validation. If set to false both syntax and semantic validation is disabled
+    "javascript.validate.enable": false,
+
+    // Run linter checks for JavaScript files - overrides validate.lint.* settings.
+    "javascript.validate.semanticValidation": false,
+
+    // Check JavaScript files for syntax errors.
+    "javascript.validate.syntaxValidation": true,
+
+    //-------- Bookmarks Configuration --------
+
+    // Allow bookmarks to be saved and restored, even if you close or change the Project
+    "bookmarks.saveBookmarksBetweenSessions": true,
+
+    // Path to another image to be presented as Bookmark
+    "bookmarks.gutterIconPath": "",
+
+    //-------- ESLint configuration --------
+
+    // Control whether eslint is enabled for JavaScript files or not.
+    "eslint.enable": true,
+
+    // The eslint options object to provide args to the eslint command.
+    "eslint.options": {},
+
+
+    //-------- JSHint configuration --------
+
+    // Control whether jshint is enabled for JavaScript files or not.
+    "jshint.enable": true,
+
+    // The jshint options object to provide args to the jshint command.
+    "jshint.options": {},
+
+
+    //-------- Project Manager Configuration --------
+
+    // List the projects sorted by...
+    "projectManager.sortList": "Name",
+
+    // Indicate the full Code app path
+    "projectManager.codePath": "C:\\Program Files (x86)\\Microsoft VS Code\\bin\\Code.cmd",
+
+    // Should the project be opened using a New Window?
+    "projectManager.openInNewWindow": true,
+
+    // Should use the alternative approach in Mac OS X?
+    "projectManager.useAlternativeMacOSXPath": false
+}

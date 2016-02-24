@@ -5,6 +5,7 @@
 // ${fileDirname}: the current opened file's dirname
 // ${fileExtname}: the current opened file's extension
 // ${cwd}: the current working directory of the spawned process
+
 // A task runner that calls the Typescript compiler (tsc) and
 // Compiles a HelloWorld.ts program
 {
@@ -21,6 +22,7 @@
             "showOutput": "silent",
             "isBuildCommand": true,
             "problemMatcher": [
+                
                 "$tsc",
                 "$lessCompile"
             ]

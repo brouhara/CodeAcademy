@@ -1,19 +1,20 @@
 
 
-var option = {
-    Options: [], // Keys from Type
-    Current: null, // Key Value From Options
-    Defaults: 0,    // Key Value For Default Option
+var Option = function(Options, Value, Defaults) {
+    
+    this.options = Options || []; // Keys from Type
+    this.current = Value || null; // Key Value From Options
+    this.defaults = Defaults || null;    // Key Value For Default Option
     
 };
 
 
-// Default Type
-
+// Inherits Properties from Option
 function Distance() {
+    this.call(option);
     
-    var Value = new Type( { 0:5, 1:10, 2:20}, 1 );
-    var Metric = new Type( { pixels: "px", percent: "%" }, "px");
+    this.Options = new Option( { 0:5, 1:10, 2:20}, 1 );
+    var Metric = new Option( { pixels: "px", percent: "%" }, "px");
     
     this.distance = Distance;
     this.metric   =  Metric;
