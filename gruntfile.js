@@ -5,5 +5,4 @@ var grunt = require('grunt');
         // Read in the Project Configuration from Package.json
         pkg: grunt.file.readJSON('package.json')
 
-
     });

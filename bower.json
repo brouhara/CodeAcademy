@@ -1,21 +1,21 @@
 {
-  "name": "codeacademy",
-  "authors": [
-    "Adam M. Brouhard <adam.brouhard@arcsuccess.com>"
-  ],
-  "description": "Learning",
-  "main": "${file}",
-  "moduleType": [
-    "amd"
-  ],
-  "license": "MIT",
-  "homepage": "",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+    "name": "codeacademy",
+    "authors": [
+        "Adam M. Brouhard <adam.brouhard@arcsuccess.com>"
+    ],
+    "description": "Learning",
+    "main": "${file}",
+    "moduleType": [
+        "amd"
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
 }
