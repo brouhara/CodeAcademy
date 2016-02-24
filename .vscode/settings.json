@@ -50,7 +50,7 @@
     "javascript.validate.semanticValidation": false,
 
     // Check JavaScript files for syntax errors.
-    "javascript.validate.syntaxValidation": true,
+    "javascript.validate.syntaxValidation": false,
 
     //-------- Bookmarks Configuration --------
 

@@ -4,10 +4,8 @@
     },
     "extends": "eslint:recommended",
     "rules": {
-        "indent": [
-            2,
-            "tab"
-        ],
+        // "indent":
+        "indent": 0,
         "linebreak-style": [
             2,
             "windows"
