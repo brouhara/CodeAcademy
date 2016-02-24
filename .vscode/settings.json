@@ -24,10 +24,10 @@
     //-------- Git configuration --------
 
     // Is git enabled
-    "git.enabled": false,
+    "git.enabled": true,
 
     // Path to the git executable
-    "git.path": "https://plextract.visualstudio.com/DefaultCollection/CodeAcademy",
+    "git.path": "C:\\Program Files\\Git\\bin\\git.exe",
 
     // Whether auto fetching is enabled.
     "git.autofetch": true,
