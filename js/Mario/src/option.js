@@ -1,3 +1,4 @@
+// Constructor Module Pattern
 function Options(object) {
 
     var options = object;
@@ -56,7 +57,6 @@ function Options(object) {
 }).call(Options.prototype);
 
 
-// Constructor Protototype
 function Option(options, defaultOption, initialOption) {
 
     this.options = new Options(options);
@@ -93,7 +93,7 @@ function Option(options, defaultOption, initialOption) {
 
 }).call(Option.prototype);
 
-function Speed() {
+function Speeds() {
 
     Option.call(this, {
         'slow': 'slow',
@@ -104,12 +104,12 @@ function Speed() {
 }
 
 (function () {
-    Speed.prototype = Object.create(Option.prototype);
-    Speed.prototype.constructor = Speed;
+    Speeds.prototype = Object.create(Option.prototype);
+    Speeds.prototype.constructor = Speeds;
 
-}).call(Speed.prototype);
+}).call(Speeds.prototype);
 
-function Metric() {
+function Metrics() {
 
     // Links Option Prototype of Distance =
     Option.call(this, {
@@ -120,10 +120,10 @@ function Metric() {
 }
 
 (function () {
-    Metric.prototype = Object.create(Option.prototype);
-    Metric.prototype.constructor = Metric;
+    Metrics.prototype = Object.create(Option.prototype);
+    Metrics.prototype.constructor = Metrics;
 
-}).call(Metric.prototype);
+}).call(Metrics.prototype);
 
 // Distance Factory Constructor, Inherits Option Properties
 function Units() {
@@ -152,13 +152,13 @@ function Distance() {
 
     // Createa a new Option
     this.units = new Units();
-    this.metric = new Metric();
+    this.metric = new Metrics();
 
     this.values = [this.units.selected, this.metric.selected];
 
 }
 
-// Closure Expression, Attaches to Distance, Assigns an Instance Shared Prototype for Performance
+// Closure Expression, Attaches to Distance, Assigns a Shared Prototype for Performance
 (function () {
 
     Distance.prototype = Object.create(Option.prototype);
@@ -168,7 +168,7 @@ function Distance() {
 
 
 
-// Otherwise known as Scalar Value
+// Scalar Value
 function Magnitude() {
 
     Option.call(this, {
@@ -178,7 +178,7 @@ function Magnitude() {
 
     this.distance = new Distance();
     this.direction = new Direction();
-    this.speed = new Speed();
+    this.speed = new Speeds();
 
     return this;
 
