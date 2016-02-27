@@ -1,8 +1,8 @@
-var grunt = require('grunt');
+var grunt = require( 'grunt' );
 
-    grunt.initConfig({
+grunt.initConfig( {
 
-        // Read in the Project Configuration from Package.json
-        pkg: grunt.file.readJSON('package.json')
+    // Read in the Project Configuration from Package.json
+    pkg: grunt.file.readJSON( 'package.json' )
 
-    });
+} );

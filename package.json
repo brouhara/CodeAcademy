@@ -1,22 +1,22 @@
 {
-  "name": "codeacademy",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "grunt": "^0.4.5"
-  },
-  "devDependencies": {
+    "name": "codeacademy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "${file}",
+    "author": "Adam",
+    "license": "ISC",
+    "dependencies": {
+        "grunt": "^0.4.5"
+    },
+    "devDependencies": {
 
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "vsts",
-    "url": "https://plextract.visualstudio.com/"
-    
-  },
-  "author": "",
-  "license": "ISC"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "vsts",
+        "url": "https://plextract.visualstudio.com/"
+
+    }
 }

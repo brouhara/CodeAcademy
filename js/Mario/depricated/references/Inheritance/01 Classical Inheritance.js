@@ -1,3 +1,5 @@
+// Equivelent to a Module
+// Instance vs Singular
 
 // Shape - superclass
 function Shape() {

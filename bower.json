@@ -1,16 +1,16 @@
 {
     "name": "codeacademy",
-    "authors": [
-        "Adam M. Brouhard <adam.brouhard@arcsuccess.com>"
-    ],
     "description": "Learning",
     "main": "${file}",
-    "moduleType": [
-        "amd"
-    ],
     "license": "MIT",
     "homepage": "",
     "private": true,
+    "authors": [
+        "Adam M. Brouhard <adam.brouhard@arcsuccess.com>"
+    ],
+    "moduleType": [
+        "amd"
+    ],
     "ignore": [
         "**/.*",
         "node_modules",

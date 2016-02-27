@@ -1,29 +1,33 @@
-
-
-
-
-
-
-$(document).ready(function () {
-    var $list = $('.list');
+$( document ).ready( function () {
+    var $list = $( '.list' );
 
     // On Keydown
-    $(document).keydown(function (key) {
+    $( document ).keydown( function ( key ) {
 
-        var $item = $('<p class="item">' + '</p');
+        var $item = $( '<p class="item">' + '</p' );
 
 
         var options = {
 
             // Valid Options
-            values: { small: 5, medium: 10, large: 20 },
-            units: { pixels: "px", percent: "%" },
-            speeds: { slow: "slow", fast: "fast" }
+            values: {
+                small: 5,
+                medium: 10,
+                large: 20
+            },
+            units: {
+                pixels: "px",
+                percent: "%"
+            },
+            speeds: {
+                slow: "slow",
+                fast: "fast"
+            }
 
         };
 
         // Constructor Function
-        function Vector(Value, Unit, Speed) {
+        function Vector( Value, Unit, Speed ) {
 
             // Define Private Variables
 
@@ -33,22 +37,28 @@ $(document).ready(function () {
             // Define Local Properties
 
             // If valid options ? assign value :  assign default.
-            this._value = available.values[Value] || available.values[0];
-            this._unit = available.units[Unit] || available.units.pixels;
-            this._speed = available.speeds[Speed] || available.speeds.slow;
+            this._value = available.values[ Value ] ||
+                available.values[ 0 ];
+            this._unit = available.units[ Unit ] ||
+                available.units.pixels;
+            this._speed = available.speeds[ Speed ] ||
+                available.speeds.slow;
 
 
-            console.log("Outter Speed: " + Speed);
+            console.log( "Outter Speed: " + Speed );
 
             // Public Objects
 
             // No Name Function > Shared Property
             this.defaults = function () {
-                return [available.values[0], available.units.pixels, available.speeds[0]];
+                return [ available.values[ 0 ],
+                    available.units.pixels, available.speeds[
+                        0 ]
+                ];
             };
 
             Vector.prototype.getValues = function () {
-                return [this.value, this.unit, this.speed];
+                return [ this.value, this.unit, this.speed ];
             };
 
             // Return an Object
@@ -61,15 +71,16 @@ $(document).ready(function () {
 
         distance.test;
         distance.test();
-        distance.test("slow");
-        distance.test("meow");
+        distance.test( "slow" );
+        distance.test( "meow" );
 
-        var distance2 = new Vector(11, "pixels", 'fast');
+        var distance2 = new Vector( 11, "pixels",
+            'fast' );
 
 
         // Enumerate Vector Object Distance
-        for (var Key in distance) {
-            console.log(Key + ":" + distance[Key]);
+        for ( var Key in distance ) {
+            console.log( Key + ":" + distance[ Key ] );
         }
 
         // Distance Object
@@ -79,19 +90,20 @@ $(document).ready(function () {
 
             // Distance Values
             value: 0,
-            unit: options.units[0],
-            speed: options.speeds[0],
+            unit: options.units[ 0 ],
+            speed: options.speeds[ 0 ],
 
             // Set to Defaults
             get defaults() {
-                return [options.values[0], options.units[0], options.speeds[0]];
+                return [ options.values[ 0 ], options.units[
+                    0 ], options.speeds[ 0 ] ];
             }
 
         };
 
         distance.options();
 
-        distance2(10, "px", "fast");
+        distance2( 10, "px", "fast" );
 
         // Returns Valid
         distance2.value = 2;
@@ -100,7 +112,7 @@ $(document).ready(function () {
         distance2._unit = "px";
 
 
-        var dist = new distance(10, "%", "fast");
+        var dist = new distance( 10, "%", "fast" );
 
         // Create Distance Object
         var vector = {
@@ -112,20 +124,30 @@ $(document).ready(function () {
                 return this.value & this.unit;
             },
 
-            set function(options) {
-                this.value = options.value || distanceDefault.value;
-                this.unit = options.unit || distanceDefault.unit;
-                this.speed = options.speed || distanceDefault.speed;
+            set function( options ) {
+                this.value = options.value ||
+                    distanceDefault.value;
+                this.unit = options.unit ||
+                    distanceDefault.unit;
+                this.speed = options.speed ||
+                    distanceDefault.speed;
             }
         };
 
 
 
         // Set Distance Object
-        distance = { value: 20, unit: "px", speed: "fast" };
+        distance = {
+            value: 20,
+            unit: "px",
+            speed: "fast"
+        };
 
         // Configure Movement Directions
-        var directionOperators = { plus: "-=", minus: "+=" };
+        var directionOperators = {
+            plus: "-=",
+            minus: "+="
+        };
 
         // Create a Direction Object
         var Direction = {
@@ -139,8 +161,9 @@ $(document).ready(function () {
                 return _operator;
             },
 
-            set operator(key) {
-                this._operator = directionOperators[key];
+            set operator( key ) {
+                this._operator = directionOperators[
+                    key ];
             },
 
             // Return Operator and Distance
@@ -149,9 +172,11 @@ $(document).ready(function () {
             },
 
             // Set Direction Variables
-            set function(options) {
+            set function( options ) {
                 this.key = options.key || 0;
-                this._operator = directionOperators[options.operator] || directionOperators[0];
+                this._operator = directionOperators[
+                        options.operator ] ||
+                    directionOperators[ 0 ];
             }
         };
 
@@ -163,29 +188,29 @@ $(document).ready(function () {
         var move = {
 
             // Variable Bound to Function
-            left: new Direction(37, "minus"),
-            right: new Direction(38, "plus"),
-            up: new Direction(39, "plus"),
-            down: new Direction(40, "minus"),
+            left: new Direction( 37, "minus" ),
+            right: new Direction( 38, "plus" ),
+            up: new Direction( 39, "plus" ),
+            down: new Direction( 40, "minus" ),
 
-            Moveleft: function () { }
+            Moveleft: function () {}
         };
 
-        move.left = ["left", 37, "minus"];
+        move.left = [ "left", 37, "minus" ];
 
-        move.left('left', 37, 'minus');
+        move.left( 'left', 37, 'minus' );
 
         move.right();
 
         function movement() {
 
             left = function () {
-                console.log("moving left");
+                console.log( "moving left" );
             };
 
         }
 
-        movement("10", "px", "left");
+        movement( "10", "px", "left" );
 
 
         var moveMario = new move();
@@ -194,34 +219,41 @@ $(document).ready(function () {
 
 
         // Parse Pressed Key
-        switch (parseInt(key.which, 10)) {
+        switch ( parseInt( key.which, 10 ) ) {
 
             // Left arrow key pressed
-            case 37:
-                $('img').animate({ left: "-=" + distance }, 'fast');
-
-                break;
+        case 37:
+            $( 'img' ).animate( {
+                left: "-=" + distance
+            }, 'fast' );
+            break;
 
             // Up Arrow Pressed
-            case 38:
-                // Put our code here
-                $('img').animate({ up: "+=10px" }, 'fast');
-                break;
+        case 38:
+            // Put our code here
+            $( 'img' ).animate( {
+                up: "+=10px"
+            }, 'fast' );
+            break;
 
             // Right Arrow Pressed
-            case 39:
-                // Put our code here
-                $('img').animate({ left: "+=10px" }, 'fast');
+        case 39:
+            // Put our code here
+            $( 'img' ).animate( {
+                left: "+=10px"
+            }, 'fast' );
 
-                //$item.html('Left: ' +
-                break;
+            //$item.html('Left: ' +
+            break;
 
             // Down Arrow Pressed
-            case 40:
-                // Put our code here
-                $('img').animate({ down: "-=10px" }, 'fast');
-                break;
+        case 40:
+            // Put our code here
+            $( 'img' ).animate( {
+                down: "-=10px"
+            }, 'fast' );
+            break;
         }
 
-    });
-});
+    } );
+} );

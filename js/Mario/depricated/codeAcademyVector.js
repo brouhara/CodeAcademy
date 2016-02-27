@@ -20,18 +20,15 @@ function Vector(Value, Unit, speed) {
             speed: methods[0]
         };
     })(Value, Speed, Unit);
-            
+
     // Pointer reference to options
     var available = options;
 
     // If valid options ? assign value :  assign default.
     var value = available.values[value] || available.values[0];
     var unit = available.units[Unit] || available.units.pixels;
-            
-    //this._speed = available.speeds[speed] || available.speeds.slow;
 
-
-    
+    // this._speed = available.speeds[speed] || available.speeds.slow;
 
     // Return an Object
     return this.props;

@@ -1,13 +1,21 @@
 // Place your settings in this file to overwrite default and user settings.
 {
     //-------- Files configuration --------
-    
-"json.schemas": [
-    {
-        "fileMatch": ["**/.jsbeautifyrc"],
-        "url": "http://json.schemastore.org/jsbeautifyrc"
-    }
-]
+
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "**/.jsbeautifyrc"
+            ],
+            "url": "http://json.schemastore.org/jsbeautifyrc"
+        },
+        {
+            "fileMatch": [
+                "**/.eslintrc.json"
+            ],
+            "url": "http://json.schemastore.org/eslintrc"
+        }
+    ],
 
     // Configure glob patterns for excluding files and folders.
     "files.exclude": {
@@ -39,16 +47,16 @@
     // Whether auto fetching is enabled.
     "git.autofetch": true,
 
-
     //-------- JavaScript configuration --------
 
     // Always include all words from the current document.
-    "javascript.suggest.alwaysAllWords": true,
+    "javascript.suggest.alwaysAllWords": false,
 
     // Complete functions with their parameter signature.
     "javascript.suggest.useCodeSnippetsOnMethodSuggest": true,
 
     // Controls how JavaScript validation works.
+
 
     // Controls VSCode's JavaScript validation. If set to false both syntax and semantic validation is disabled
     "javascript.validate.enable": false,
