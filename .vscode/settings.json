@@ -56,14 +56,6 @@
 	// Check JavaScript files for syntax errors.
 	"javascript.validate.syntaxValidation": false,
 
-	//-------- Bookmarks Configuration --------
-
-	// Allow bookmarks to be saved and restored, even if you close or change the Project
-	"bookmarks.saveBookmarksBetweenSessions": true,
-
-	// Path to another image to be presented as Bookmark
-	"bookmarks.gutterIconPath": "",
-
 	//-------- ESLint configuration --------
 
 	// Control whether eslint is enabled for JavaScript files or not.
