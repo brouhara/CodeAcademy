@@ -2,28 +2,28 @@
 // Self-Invoking Function,
 // Uses the Same Scope/This as Above
 // Uses Call to Append Above Type Protocol
+(function () {
+
+	// Non-Redefinable Property
+	Object.defineProperty(this, 'value', {
+		get: function () {
+			return this.Value;
+		},
+		set: function (value) {
+			this.setValue();
+		},
+		configurable: true,
+		enumerable: true,
+		writeable: false
+	});
+
+}).call(Type.prototype);
+
+
 ( function () {
-
-    // Non-Redefinable Property
-    Object.defineProperty( this, 'value', {
-        get: function () {
-            return this.Value;
-        },
-        set: function ( value ) {
-            this.setValue();
-        },
-        configurable: true,
-        enumerable: true,
-        writeable: false
-    } );
-
-} ).call( Type.prototype );
-
-
-( function () {
-    this.update = function ( name ) {
-        this.name = name;
-    };
+	this.update = function ( name ) {
+		this.name = name;
+	};
 } ).call( newObject.prototype );
 
 newObject( 'hello' );
@@ -33,69 +33,69 @@ newObject( 'hello' );
  *
  * Creates a new adjustable vector option.
  *
- *      @param type { Value, Unit, Speed }
+ *	  @param type { Value, Unit, Speed }
  */
 var option = function ( Options ) {
 
-    // Overide Prototype Defaults
-    var type;
-    var defaultValue;
+	// Overide Prototype Defaults
+	var type;
+	var defaultValue;
 
-    this.currentValue = [];
-    this.lastValue = defaultValue;
+	this.currentValue = [];
+	this.lastValue = defaultValue;
 
 }
 
 ( function () {
-    // Shared prototype properties
+	// Shared prototype properties
 
-    // Defined Option Types
-    var speed = new type( [ 5, 10, 20 ], 1 );
-
-
-
-
-    console.log( DefaultTypes.speeds );
-
-    // Create New Types
+	// Defined Option Types
+	var speed = new type( [ 5, 10, 20 ], 1 );
 
 
 
 
-    types.addType( "speeds", [ 0, 10, 20 ], 0 );
+	console.log( DefaultTypes.speeds );
 
-
-    // Set the Constructor Functions Private Values
-
-
-    this.type = Object.keys( types ).;
-
-
-    ( function setInitialValue() {
-        update( options[ defaults[ this.type ] ] );
-    } )();
+	// Create New Types
 
 
 
-    this.getDefault = function () {
-        return this.default;
-    };
 
-    this.assign = function ( option ) {
-        valid( option ): update( validOptions[] )
-    }
+	types.addType( "speeds", [ 0, 10, 20 ], 0 );
 
-    function assign( option ) {
 
-        if ( valid( option ) ) {
+	// Set the Constructor Functions Private Values
 
-            return update( validOptions[ option ] );
-        } else {
-            update( validOptions.defaults );
-            return currentValue;
-        }
 
-    }
+	this.type = Object.keys( types ).;
+
+
+	( function setInitialValue() {
+		update( options[ defaults[ this.type ] ] );
+	} )();
+
+
+
+	this.getDefault = function () {
+		return this.default;
+	};
+
+	this.assign = function ( option ) {
+		valid( option ): update( validOptions[] )
+	}
+
+	function assign( option ) {
+
+		if ( valid( option ) ) {
+
+			return update( validOptions[ option ] );
+		} else {
+			update( validOptions.defaults );
+			return currentValue;
+		}
+
+	}
 
 } ).call( option.prototype );
 
@@ -105,45 +105,45 @@ var option = function ( Options ) {
  *  Code is hidden from the user.
  *
  *  Parameters
- *      @param option    : name of option
- *      @param defaults  : defaults options object
- *      @param options   : available options Object
+ *	  @param option	: name of option
+ *	  @param defaults  : defaults options object
+ *	  @param options   : available options Object
  */
 function ( option, defaults, options ) {
 
 
 
-    /**
-     * Returns the Newly Assigned Value
-     *
-     * Updates lastValue
-     */
+	/**
+	 * Returns the Newly Assigned Value
+	 *
+	 * Updates lastValue
+	 */
 
 
 
 
 
-    function log( msg ) {
-        console.log( msg );
-    }
+	function log( msg ) {
+		console.log( msg );
+	}
 
-    // Return Function, Called when Option() is Called
-    // User Specified Parameters
-    return function ( value ) {
+	// Return Function, Called when Option() is Called
+	// User Specified Parameters
+	return function ( value ) {
 
-        // Externally Visible Code
-        if ( typeof value !== 'undefined' ) {
-            return {
-                current: currentValue,
-                new: value,
-                result: assign( value )
-            };
-        }
+		// Externally Visible Code
+		if ( typeof value !== 'undefined' ) {
+			return {
+				current: currentValue,
+				new: value,
+				result: assign( value )
+			};
+		}
 
-        return {
-            current: currentValue
-        };
-    };
+		return {
+			current: currentValue
+		};
+	};
 
-    // Globally Passed Variables, Not Assignable
+	// Globally Passed Variables, Not Assignable
 } )( option, defaults, options );

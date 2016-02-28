@@ -4,5 +4,7 @@
   "ref": "master",
   "path": "typings",
   "bundle": "typings/tsd.d.ts",
-  "installed": {}
+  "installed": {
+	  "node":"typings"
+   }
 }

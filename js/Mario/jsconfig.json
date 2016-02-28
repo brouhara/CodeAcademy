@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"target": "ES5",
+		"module": "commonjs"
+	},
+
+	"files": [
+		"option.js"
+	],
+
+	"exclude": [
+		"**/references/**",
+		"**/depricated/**",
+		"**/bin/**"
+	]
+}
