@@ -95,6 +95,13 @@
 	"projectManager.useAlternativeMacOSXPath": false,
 
 	// Team Project Folder
-	"vsts.teamProject": "CodeAcademy"
+	"vsts.teamProject": "CodeAcademy",
 
+	"align.afterSeparators": [
+		":",
+		"[",
+		"]",
+		"(",
+		")"
+	]
 }
