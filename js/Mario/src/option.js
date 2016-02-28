@@ -1,4 +1,3 @@
-
 // Constructor Module Pattern
 function Options(object) {
 
@@ -18,40 +17,42 @@ function Options(object) {
 		return values;
 	}
 
-	this.keys = ( ( typeof options !== 'undefined') ? setKeys() : []);
+	this.keys = ((typeof options !== 'undefined') ? setKeys() : []);
 
-	this.values = ( ( typeof options !== 'undefined') ? setValues() : []);
+	this.values = ((typeof options !== 'undefined') ? setValues() : []);
 
 }
 
-(function () {
+(function() {
 
 	Options.prototype = Object.create(Options.prototype);
 	Options.prototype.constructor = Options;
 
-	this.isDefined = function (object) {
+	this.isDefined = function(object) {
 		return ((typeof object !== 'undefined') ? true : false);
 	};
 
-	this.inArray = function (value, object) {
+	this.inArray = function(value, object) {
 		for (var key in object) {
-			if (object[key] === value) { return true; }
+			if (object[key] === value) {
+				return true;
+			}
 		}
 	};
 
-	this.hasValue = function (value) {
+	this.hasValue = function(value) {
 		return this.inArray(value, this.values);
 	};
 
-	this.hasKey = function (key) {
+	this.hasKey = function(key) {
 		return this.inArray(key, this.keys);
 	};
 
-	this.getKeyValue = function (key) {
+	this.getKeyValue = function(key) {
 		return this.names[key];
 	};
 
-	this.setKeyValue = function (key, value) {
+	this.setKeyValue = function(key, value) {
 		return (this.options[key] = value);
 	};
 
@@ -68,24 +69,24 @@ function Option(options, defaultOption, initialOption) {
 
 }
 
-(function () {
+(function() {
 
 	Option.prototype = Object.create(Option.prototype);
 	Option.prototype.constructor = Option;
 
-	this.reset = function () {
+	this.reset = function() {
 		this.selected = this.default;
 		return this.selected;
 	};
 
-	this.setOption = function (option, value) {
+	this.setOption = function(option, value) {
 		if (this.options.hasKey(option)) {
 			return this.options.setKey(option, value);
 		}
 		return false;
 	};
 
-	this.select = function (option) {
+	this.select = function(option) {
 		if (this.options.hasKey(option)) {
 			return (this.selected = option);
 		}
@@ -104,7 +105,7 @@ function Speeds() {
 	return this;
 }
 
-(function () {
+(function() {
 	Speeds.prototype = Object.create(Option.prototype);
 	Speeds.prototype.constructor = Speeds;
 
@@ -120,7 +121,7 @@ function Metrics() {
 
 }
 
-(function () {
+(function() {
 	Metrics.prototype = Object.create(Option.prototype);
 	Metrics.prototype.constructor = Metrics;
 
@@ -141,7 +142,7 @@ function Units() {
 }
 
 // Closure Expression, Attaches to Distance, Assigns an Instance Shared Prototype for Performance
-(function () {
+(function() {
 
 	Units.prototype = Object.create(Option.prototype);
 	Units.prototype.constructor = Units;
@@ -160,7 +161,7 @@ function Distance() {
 }
 
 // Closure Expression, Attaches to Distance, Assigns a Shared Prototype for Performance
-(function () {
+(function() {
 
 	Distance.prototype = Object.create(Option.prototype);
 	Distance.prototype.constructor = Distance;
@@ -185,7 +186,7 @@ function Magnitude() {
 
 }
 
-(function () {
+(function() {
 	Vector.prototype = Object.create(Option.prototype);
 	Vector.prototype.constructor = Vector;
 
@@ -207,7 +208,7 @@ function Direction() {
 }
 
 // Closure Expression, Attaches to Distance, Assigns an Instance Shared Prototype for Performance
-(function () {
+(function() {
 
 	Direction.prototype = Object.create(Option.prototype);
 	Direction.prototype.constructor = Direction;
@@ -230,7 +231,7 @@ function Vector() {
 
 }
 
-(function () {
+(function() {
 	Vector.prototype = Object.create(Option.prototype);
 	Vector.prototype.constructor = Vector;
 
@@ -250,5 +251,3 @@ console.log(speedObj);
 
 var vec = new Vector();
 console.log(vec);
-
-
