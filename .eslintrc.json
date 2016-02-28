@@ -1,33 +1,31 @@
 {
-    "env": {
-        "node": true
-
-    },
-    "parser-options": {
-        "ecmaVersion": 6,
-        "sourceType": "script"
-    },
-    "settings": {
-        "extends": "eslint:recommended"
-    },
-
-    "parser": "console",
-
-    "rules": {
-        // "indent":
-        "no-console":0,
-        "indent": 0,
-        "linebreak-style": [
-            2,
-            "windows"
-        ],
-        "quotes": [
-            2,
-            "single"
-        ],
-        "semi": [
-            2,
-            "always"
-        ]
-    }
+	"env": {
+		"node": true,
+		"commonjs": false
+	},
+	"parser-options": {
+		"ecmaVersion": 5,
+		"sourceType": "script"
+	},
+	"settings": {
+		"extends": "eslint:recommended"
+	},
+	"parser": "console",
+	"rules": {
+		// "indent":
+		"no-console": 0,
+		"indent": 0,
+		"linebreak-style": [
+			2,
+			"windows"
+		],
+		"quotes": [
+			2,
+			"single"
+		],
+		"semi": [
+			2,
+			"always"
+		]
+	}
 }
