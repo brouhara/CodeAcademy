@@ -18,9 +18,9 @@ function Options(object) {
 		return values;
 	}
 
-	this.keys = ((typeof options !== 'undefined') ? setKeys() : []);
+	this.keys = ( ( typeof options !== 'undefined') ? setKeys() : []);
 
-	this.values = ((typeof options !== 'undefined') ? setValues() : []);
+	this.values = ( ( typeof options !== 'undefined') ? setValues() : []);
 
 }
 
@@ -30,10 +30,10 @@ function Options(object) {
 	Options.prototype.constructor = Options;
 
 	this.isDefined = function (object) {
-		return ( (typeof object !== 'undefined') ? true : false);
+		return ((typeof object !== 'undefined') ? true : false);
 	};
 
-	this.inArray = function(value, object) {
+	this.inArray = function (value, object) {
 		for (var key in object) {
 			if (object[key] === value) { return true; }
 		}
