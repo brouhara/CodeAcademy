@@ -8,7 +8,7 @@
 	// Configure glob patterns for excluding files and folders.
 	"files.exclude": {
 		"**/BuildProcessTemplates": true,
-		"**/node_modules": false,
+		//"**/node_modules": false,
 		"**/.git": true,
 		"**/.DS_Store": true
 	},
