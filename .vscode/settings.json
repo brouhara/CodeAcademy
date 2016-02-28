@@ -70,7 +70,7 @@
 	"eslint.enable": true,
 
 	// The eslint options object to provide args to the eslint command.
-	"eslint.options": { },
+	"eslint.options": {},
 
 	//-------- JSHint configuration --------
 
@@ -78,7 +78,7 @@
 	"jshint.enable": true,
 
 	// The jshint options object to provide args to the jshint command.
-	"jshint.options": { },
+	"jshint.options": {},
 
 	//-------- Project Manager Configuration --------
 
@@ -102,6 +102,32 @@
 		"[",
 		"]",
 		"(",
+		")",
+		"="
+	],
+	
+	"align.beforeSeparators": [
+		"=",
+		"from",
+		"+=",
+		"-=",
+		"*=",
+		"/=",
+		"?=",
+		"|=",
+		"%=",
+		".=",
+		"=>",
+		"(",
 		")"
-	]
+	],
+
+	"beautify.JSfiles": [
+		"js",
+		"json",
+		"jsbeautifyrc",
+		"jshintrc"
+	],
+	
+	"typescript.tsdk": "C:\\Users\\adam.brouhard\\APPDATA\\npm\\node_modules\\typescript\\bin"
 }
