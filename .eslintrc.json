@@ -1,8 +1,18 @@
 {
     "env": {
         "node": true
+
     },
-    "extends": "eslint:recommended",
+    "parser-options": {
+        "ecmaVersion": 6,
+        "sourceType": "script"
+    },
+    "settings": {
+        "extends": "eslint:recommended"
+    },
+
+    "parser": "console",
+
     "rules": {
         // "indent":
         "no-console":0,

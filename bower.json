@@ -9,7 +9,7 @@
         "Adam M. Brouhard <adam.brouhard@arcsuccess.com>"
     ],
     "moduleType": [
-        "amd"
+        "node"
     ],
     "ignore": [
         "**/.*",

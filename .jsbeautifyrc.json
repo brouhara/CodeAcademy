@@ -1,7 +1,5 @@
 
 {
-    // https://github.com/Glavin001/atom-beautify/issues/266
-
     "js": {
         "indent_size": 1,
         "indent_char": "\t",
