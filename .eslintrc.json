@@ -31,9 +31,10 @@
 			"always"
 		],
 
-		"space-in-parens": 1,
-		"space-before-function-paren": 1,
-		"spaced-comment": 1
-
+		"space-in-parens": 2,
+		"space-before-function-paren": 2,
+		"spaced-comment": 2,
+		"space-after-keywords": 2,
+		"no-trailing-spaces": 2
 	}
 }

@@ -6,23 +6,25 @@
 
 	//-------- Git configuration --------
 
+	// Whether auto fetching is enabled.
+	"git.autofetch": false,
+	
 	// Is git enabled
 	"git.enabled": true,
 
 	// Path to the git executable
 	"git.path": "C:\\Program Files\\Git\\bin\\git.exe",
 
-	// Whether auto fetching is enabled.
-	"git.autofetch": false,
 
 	//-------- Files configuration --------
 
 	// Configure glob patterns for excluding files and folders.
 	"files.exclude": {
-		//"**/BuildProcessTemplates": true,
-		//"**/node_modules": false,
-		"**/.git": false,
-		"**/.DS_Store": true
+		"**/.git": true,
+		"**/.DS_Store": true,
+		"**/BuildProcessTemplates": true,
+		"**/node_modules": true,
+		"**/typings":true
 	},
 
 	// The default character set encoding to use when reading and writing files.
@@ -49,12 +51,6 @@
 	
 	"jscs.configuration": {},
 	
-	//-------- TSLint configuration --------
-	
-	"tslint.enable": false,
-	
-	"tslint.configFile": "",
-
 	//-------- ESLint configuration --------
 
 	// Control whether eslint is enabled for JavaScript files or not.
@@ -70,6 +66,13 @@
 
 	// The jshint options object to provide args to the jshint command.
 	"jshint.options": {},
+	
+	//-------- TSLint configuration --------
+	
+	"tslint.enable": false,
+	
+	"tslint.configFile": "",
+
 	//-------- JavaScript configuration --------
 	
 	"editor.tabSize": 4,

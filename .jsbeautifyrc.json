@@ -1,9 +1,7 @@
 {
-	
 	"brace_style": [
 		"expand"
 	],
-	
 	"break_chained_methods": false,
 	
 	"end_with_newline": true,
@@ -29,6 +27,6 @@
 	
 	"unescape_strings": false,
 	
-	"wrap_line_length": 50
+	"wrap_line_length": 70
 
 }
