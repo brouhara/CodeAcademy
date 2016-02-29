@@ -44,9 +44,6 @@
 	// Complete functions with their parameter signature.
 	"javascript.suggest.useCodeSnippetsOnMethodSuggest": true,
 
-	// Controls how JavaScript validation works.
-
-
 	// Controls VSCode's JavaScript validation. If set to false both syntax and semantic validation is disabled
 	"javascript.validate.enable": false,
 
@@ -59,7 +56,7 @@
 	//-------- ESLint configuration --------
 
 	// Control whether eslint is enabled for JavaScript files or not.
-	"eslint.enable": true,
+	"eslint.enable": false,
 
 	// The eslint options object to provide args to the eslint command.
 	"eslint.options": {},
@@ -67,7 +64,7 @@
 	//-------- JSHint configuration --------
 
 	// Control whether jshint is enabled for JavaScript files or not.
-	"jshint.enable": true,
+	"jshint.enable": false,
 
 	// The jshint options object to provide args to the jshint command.
 	"jshint.options": {},
