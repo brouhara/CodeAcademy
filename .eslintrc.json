@@ -2,6 +2,7 @@
 	"env": {
 		"node": true,
 		"commonjs": false
+		
 	},
 	"parser-options": {
 		"ecmaVersion": 5,

@@ -58,7 +58,7 @@
 	
 	"jscs.enable": true,
 	
-	"jscs.configuration": {},
+	"jscs.configuration": { "},
 	
 	//-------- JSHint configuration --------
 	
@@ -76,13 +76,14 @@
 	
 	//-------- JavaScript configuration --------
 	
-	
+	// Set the tab size in spaces
 	"editor.tabSize": 4,
 	
-	
+	// Set the brackets closing size
 	"editor.autoClosingBrackets": true,
 
-	// Controls VSCode's JavaScript validation. If set to false both syntax and semantic validation is disabled
+	// Controls VSCode's JavaScript validation.
+	// If set to false both syntax and semantic validation is disabled
 	"javascript.validate.enable": false,
 
 	// Run linter checks for JavaScript files - overrides validate.lint.* settings.
@@ -91,12 +92,13 @@
 	// Check JavaScript files for syntax errors.
 	"javascript.validate.syntaxValidation": false,
 	
-
+	// Types of files to beautify
 	"beautify.JSfiles": [
 		"js",
 		"json"
 	],
 	
+	// 
 	"align.afterSeparators": [
 		":",
 		"[",
@@ -105,6 +107,7 @@
 		")",
 		"="
 	],
+	
 	
 	"align.beforeSeparators": [
 		"=",

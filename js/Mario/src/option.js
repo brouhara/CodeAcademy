@@ -1,4 +1,3 @@
-
 // Constructor Module Pattern
 
 function Options(object) {
