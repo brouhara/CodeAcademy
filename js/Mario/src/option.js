@@ -19,9 +19,9 @@ function Options(object) {
 		return values;
 	}
 
-	this.keys = ((typeof options !== 'undefined') ? setKeys() : []);
+	this.keys = ( (typeof options !== 'undefined') ? setKeys() : []);
 
-	this.values = ((typeof options !== 'undefined') ? setValues() : []);
+	this.values = ( (typeof options !== 'undefined') ? setValues() : []);
 
 }
 

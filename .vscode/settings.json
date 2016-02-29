@@ -21,7 +21,7 @@
 	"files.exclude": {
 		//"**/BuildProcessTemplates": true,
 		//"**/node_modules": false,
-		"**/.git": true,
+		"**/.git": false,
 		"**/.DS_Store": true
 	},
 
@@ -133,9 +133,7 @@
 	// Should the project be opened using a New Window?
 	"projectManager.openInNewWindow": true,
 
-	// Should use the alternative approach in Mac OS X?
-	"projectManager.useAlternativeMacOSXPath": false,
-
 	// Team Project Folder
 	"vsts.teamProject": "CodeAcademy"
+	
 }

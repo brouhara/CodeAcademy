@@ -20,6 +20,6 @@
 	},
 	"repository": {
 		"type": "vsts",
-		"url": "https://plextract.visualstudio.com"
+		"url": "https://plextract.visualstudio.com/DefaultCollection/_git/CodeAcademy"
 	}
 }
