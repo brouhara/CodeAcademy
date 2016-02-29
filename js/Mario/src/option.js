@@ -1,4 +1,6 @@
+
 // Constructor Module Pattern
+
 function Options(object) {
 
 	var options = object;

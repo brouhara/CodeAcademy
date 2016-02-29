@@ -26,6 +26,13 @@
 		"semi": [
 			2,
 			"always"
-		]
+		],
+		
+		"space-in-parens": 1,
+		"space-before-function-paren": 1,
+		"no-irregular-whitespace": 1,
+		"no-mixed-spaces-and-tabs": 1,
+		"spaced-comment": 1
+		
 	}
 }

@@ -52,8 +52,7 @@ $( document ).ready( function () {
             // No Name Function > Shared Property
             this.defaults = function () {
                 return [ available.values[ 0 ],
-                    available.units.pixels, available.speeds[
-                        0 ]
+                    available.units.pixels, available.speeds[ 0 ]
                 ];
             };
 

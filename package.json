@@ -1,25 +1,25 @@
 {
-  "name": "codeacademy",
-  "version": "1.0.0",
-  "description": "",
-  "main": "${file}",
-  "author": "Adam",
-  "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "eslint": "^2.2.0",
-    "gulp": "^3.9.1",
-    "gulp-util": "^3.0.7",
-    "js-beautify": "^1.6.2",
-    "jscs": "^2.10.1",
-    "jshint": "^2.9.1",
-    "typescript": "^1.8.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "vsts",
-    "url": "https://plextract.visualstudio.com"
-  }
+	"name": "codeacademy",
+	"version": "1.0.0",
+	"description": "",
+	"main": "${file}",
+	"author": "Adam",
+	"license": "ISC",
+	"dependencies": {},
+	"devDependencies": {
+		"eslint": "^2.2.0",
+		"gulp": "^3.9.1",
+		"gulp-util": "^3.0.7",
+		"js-beautify": "^1.6.2",
+		"jscs": "^2.10.1",
+		"jshint": "^2.9.1",
+		"typescript": "^1.8.2"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "vsts",
+		"url": "https://plextract.visualstudio.com"
+	}
 }

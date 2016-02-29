@@ -2,8 +2,14 @@
 	"compilerOptions": {
 		"target": "ES6",
 		"module": "commonjs"
+		
 	},
+	
+	"files": [
+		
+	],
+	
 	"exclude": [
-		"**/node_modules/**"
+		
 	]
 }
