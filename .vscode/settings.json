@@ -4,6 +4,37 @@
 	
 	//-------- Rewrap configuration --------
 
+	//-------- ESLint configuration --------
+
+	// Control whether eslint is enabled for JavaScript files or not.
+	"eslint.enable": false,
+
+	// The eslint options object to provide args to the eslint command.
+	"eslint.options": {},
+
+	//-------- Files configuration --------
+
+	// Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange". If set to "afterDelay" you can configure the delay in "files.autoSaveDelay".
+	"files.autoSave": "afterDelay",
+
+	// Controls the delay in ms after which a dirty file is saved automatically. Only applies when "files.autoSave" is set to "afterDelay"
+	"files.autoSaveDelay": 10,
+
+	// The default character set encoding to use when reading and writing files.
+	"files.encoding": "utf8",
+
+	// Configure glob patterns for excluding files and folders.
+	"files.exclude": {
+		"**/.git": true,
+		"**/.DS_Store": true,
+		"**/BuildProcessTemplates": true,
+		"**/node_modules": true,
+		"**/typings":true
+	},
+
+	// When enabled, will trim trailing whitespace when you save a file.
+	"files.trimTrailingWhitespace": false,
+
 	//-------- Git configuration --------
 
 	// Whether auto fetching is enabled.
@@ -15,52 +46,22 @@
 	// Path to the git executable
 	"git.path": "C:\\Program Files\\Git\\bin\\git.exe",
 
-
-	//-------- Files configuration --------
-
-	// Configure glob patterns for excluding files and folders.
-	"files.exclude": {
-		"**/.git": true,
-		"**/.DS_Store": true,
-		"**/BuildProcessTemplates": true,
-		"**/node_modules": true,
-		"**/typings":true
-	},
-
-	// The default character set encoding to use when reading and writing files.
-	"files.encoding": "utf8",
-
-	// When enabled, will trim trailing whitespace when you save a file.
-	"files.trimTrailingWhitespace": false,
-
-	// Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange". If set to "afterDelay" you can configure the delay in "files.autoSaveDelay".
-	"files.autoSave": "afterDelay",
-
-	// Controls the delay in ms after which a dirty file is saved automatically. Only applies when "files.autoSave" is set to "afterDelay"
-	"files.autoSaveDelay": 10,
+	//-------- JavaScript configuration --------
 
 	// Always include all words from the current document.
 	"javascript.suggest.alwaysAllWords": false,
 
 	// Complete functions with their parameter signature.
 	"javascript.suggest.useCodeSnippetsOnMethodSuggest": true,
-
+	
 	//-------- JSCS configuration --------
 	
 	"jscs.enable": true,
 	
 	"jscs.configuration": {},
 	
-	//-------- ESLint configuration --------
-
-	// Control whether eslint is enabled for JavaScript files or not.
-	"eslint.enable": false,
-
-	// The eslint options object to provide args to the eslint command.
-	"eslint.options": {},
-
 	//-------- JSHint configuration --------
-
+	
 	// Control whether jshint is enabled for JavaScript files or not.
 	"jshint.enable": false,
 
@@ -72,12 +73,14 @@
 	"tslint.enable": false,
 	
 	"tslint.configFile": "",
-
+	
 	//-------- JavaScript configuration --------
 	
+	
 	"editor.tabSize": 4,
+	
+	
 	"editor.autoClosingBrackets": true,
-
 
 	// Controls VSCode's JavaScript validation. If set to false both syntax and semantic validation is disabled
 	"javascript.validate.enable": false,
