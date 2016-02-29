@@ -2,12 +2,6 @@
 // https://github.com/Glavin001/atom-beautify/issues/266
 {
 	
-	// Set the tab size in spaces
-	"editor.tabSize": 4,
-	
-	// Set the brackets closing size
-	"editor.autoClosingBrackets": true,
-
 	// 
 	"align.afterSeparators": [
 		":",
@@ -34,6 +28,12 @@
 		"(",
 		")"
 	],
+
+	// Set the tab size in spaces
+	"editor.tabSize": 4,
+	
+	// Set the brackets closing size
+	"editor.autoClosingBrackets": true,
 
 
 	// Types of files to beautify
@@ -98,8 +98,6 @@
 	// Check JavaScript files for syntax errors.
 	"javascript.validate.syntaxValidation": false,
 	
-	//-------- JavaScript configuration --------
-
 	// Always include all words from the current document.
 	"javascript.suggest.alwaysAllWords": false,
 
@@ -132,7 +130,7 @@
 	"projectManager.openInNewWindow": true,
 
 	// Team Project Folder
-	"vsts.teamProject": "CodeAcademy"
+	"vsts.teamProject": "CodeAcademy",
 	
 	//-------- TSLint configuration --------
 	
