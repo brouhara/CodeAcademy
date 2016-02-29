@@ -44,7 +44,7 @@
 	"git.enabled": true,
 
 	// Path to the git executable
-	"git.path": "C:\\Program Files\\Git\\bin\\git.exe",
+	"git.path": "C:\\Program Files\\Git\\git-cmd.exe",
 
 	//-------- JavaScript configuration --------
 
