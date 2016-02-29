@@ -13,12 +13,18 @@
 	"parser": "console",
 	"rules": {
 		// "indent":
-		"no-console": 0,
 		"indent": 0,
+		
+		
 		"linebreak-style": [
 			2,
 			"windows"
 		],
+		
+		"no-console": 0,
+		"no-irregular-whitespace": 1,
+		"no-mixed-spaces-and-tabs": 1,
+		
 		"quotes": [
 			2,
 			"single"
@@ -30,8 +36,6 @@
 		
 		"space-in-parens": 1,
 		"space-before-function-paren": 1,
-		"no-irregular-whitespace": 1,
-		"no-mixed-spaces-and-tabs": 1,
 		"spaced-comment": 1
 		
 	}
