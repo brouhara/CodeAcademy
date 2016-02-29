@@ -120,17 +120,6 @@
 	// The jshint options object to provide args to the jshint command.
 	"jshint.options": {},
 	
-	//-------- TSLint configuration --------
-	
-	"tslint.enable": false,
-	
-	"tslint.configFile": "",
-	
-
-	//-------- Typescript configuration --------
-
-	"typescript.tsdk": "C:\\Users\\adam.brouhard\\AppData\\Roaming\\npm\\node_modules\\tsc\\bin",
-	
 	//-------- Project Manager Configuration --------
 
 	// List the projects sorted by...
@@ -144,5 +133,16 @@
 
 	// Team Project Folder
 	"vsts.teamProject": "CodeAcademy"
+	
+	//-------- TSLint configuration --------
+	
+	"tslint.enable": false,
+	
+	"tslint.configFile": "",
+	
+
+	//-------- Typescript configuration --------
+
+	"typescript.tsdk": "C:\\Users\\adam.brouhard\\AppData\\Roaming\\npm\\node_modules\\tsc\\bin",
 	
 }
