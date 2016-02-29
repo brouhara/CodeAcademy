@@ -58,7 +58,7 @@
 	
 	"jscs.enable": true,
 	
-	"jscs.configuration": { "},
+	"jscs.configuration": { },
 	
 	//-------- JSHint configuration --------
 	
