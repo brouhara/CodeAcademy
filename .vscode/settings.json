@@ -7,7 +7,7 @@
 
 	// Configure glob patterns for excluding files and folders.
 	"files.exclude": {
-		"**/BuildProcessTemplates": true,
+		//"**/BuildProcessTemplates": true,
 		//"**/node_modules": false,
 		"**/.git": true,
 		"**/.DS_Store": true
@@ -37,6 +37,43 @@
 	"git.autofetch": false,
 
 	//-------- JavaScript configuration --------
+
+	"align.afterSeparators": [
+		":",
+		"[",
+		"]",
+		"(",
+		")",
+		"="
+	],
+	
+	"align.beforeSeparators": [
+		"=",
+		"from",
+		"+=",
+		"-=",
+		"*=",
+		"/=",
+		"?=",
+		"|=",
+		"%=",
+		".=",
+		"=>",
+		"(",
+		")"
+	],
+
+	"beautify.JSfiles": [
+		"js",
+		"json",
+		"jsbeautifyrc",
+		"jshintrc"
+	],
+	
+	"editor.autoClosingBrackets": true,
+	"editor.tabSize": 4,
+	
+	"jscs.enable": true,
 
 	// Always include all words from the current document.
 	"javascript.suggest.alwaysAllWords": false,
@@ -69,6 +106,10 @@
 	// The jshint options object to provide args to the jshint command.
 	"jshint.options": {},
 
+	//-------- Typescript configuration --------
+
+	"typescript.tsdk": "C:\\Users\\adam.brouhard\\AppData\\Roaming\\npm\\node_modules\\tsc\\bin",
+	
 	//-------- Project Manager Configuration --------
 
 	// List the projects sorted by...
@@ -84,44 +125,5 @@
 	"projectManager.useAlternativeMacOSXPath": false,
 
 	// Team Project Folder
-	"vsts.teamProject": "CodeAcademy",
-
-	"align.afterSeparators": [
-		":",
-		"[",
-		"]",
-		"(",
-		")",
-		"="
-	],
-	
-	"align.beforeSeparators": [
-		"=",
-		"from",
-		"+=",
-		"-=",
-		"*=",
-		"/=",
-		"?=",
-		"|=",
-		"%=",
-		".=",
-		"=>",
-		"(",
-		")"
-	],
-
-	"beautify.JSfiles": [
-		//"js",
-		"json",
-		"jsbeautifyrc",
-		"jshintrc"
-	],
-	
-	"typescript.tsdk": "C:\\Users\\adam.brouhard\\AppData\\Roaming\\npm\\node_modules\\tsc\\bin",
-	
-	"editor.autoClosingBrackets": true,
-	"editor.tabSize": 4,
-	
-	"jscs.enable": true
+	"vsts.teamProject": "CodeAcademy"
 }
