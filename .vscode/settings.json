@@ -121,5 +121,10 @@
 		"jshintrc"
 	],
 	
-	"typescript.tsdk": "C:\\Users\\adam.brouhard\\AppData\\Roaming\\npm\\node_modules\\tsc\\bin"
+	"typescript.tsdk": "C:\\Users\\adam.brouhard\\AppData\\Roaming\\npm\\node_modules\\tsc\\bin",
+	
+	"editor.autoClosingBrackets": true,
+	"editor.tabSize": 4,
+	
+	"jscs.enable": true
 }

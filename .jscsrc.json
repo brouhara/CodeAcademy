@@ -1,18 +1,13 @@
 {
 	"disallowMixedSpacesAndTabs": true,
-	
 	"requireCapitalizedConstructors": true,
 	"requireCommaBeforeLineBreak": true,
-	
-	"requireSpaceAfterBinaryOperators": true,	
+	"requireSpaceAfterBinaryOperators": true,
 	"requireSpacesInFunctionDeclaration": {
 		"beforeOpeningCurlyBrace": true,
 		"beforeOpeningRoundBrace": true
 	},
-	
 	"requireSpacesInsideParentheses": "all",
 	"requireSpacesInsideObjectBrackets": "all",
-
-	
 	"validateIndentation": "\t"
 }
